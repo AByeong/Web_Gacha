@@ -804,6 +804,65 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898951694}
   m_CullTransparentMesh: 1
+--- !u!1 &957489870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 957489872}
+  - component: {fileID: 957489871}
+  m_Layer: 0
+  m_Name: CardSetter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &957489871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957489870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57cb9047e9fef3740aa6e7bb1cb3968f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardPool:
+  - {fileID: 11400000, guid: 05395ab6e02b14e4fbdd4cc95091e845, type: 2}
+  - {fileID: 11400000, guid: d9e1354ba1313e646ab9bedeed4bd20e, type: 2}
+  - {fileID: 11400000, guid: 079b3ad24170fa7499c7097ea8cdde1e, type: 2}
+  - {fileID: 11400000, guid: 5a81627ca4f7de14ba3c5f04c43b9063, type: 2}
+  - {fileID: 11400000, guid: 3fabb5a8646c94e4e99b8dffae5944b2, type: 2}
+  - {fileID: 11400000, guid: 763f5b81fa99e634a88d9f949da7d1f4, type: 2}
+  - {fileID: 11400000, guid: 24bd560adecf84a459bceec1996f0fb0, type: 2}
+  - {fileID: 11400000, guid: 6d7ca0f004a0faf4fa9280bbd98b407e, type: 2}
+  - {fileID: 11400000, guid: 2cbb13effc1701e4b851b8c6dce407a3, type: 2}
+  - {fileID: 11400000, guid: c7dab3847fa7f75498a0449eba0c3a75, type: 2}
+  - {fileID: 11400000, guid: d2133c00c1245c74ab0b6282dd40c60e, type: 2}
+  - {fileID: 11400000, guid: 1eeac914d5707f7468e25a992a02433d, type: 2}
+  - {fileID: 11400000, guid: 58f2b3196985ca24c9476a09c0b4ffce, type: 2}
+  - {fileID: 11400000, guid: e75a3131622dbda40ac7e5dbd646f822, type: 2}
+--- !u!4 &957489872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957489870}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 427.0174, y: 330.4733, z: 1.3110696}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1350154329
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +989,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1350154329}
   m_CullTransparentMesh: 1
+--- !u!1 &1375175042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1375175044}
+  - component: {fileID: 1375175043}
+  m_Layer: 0
+  m_Name: CardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1375175043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375175042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a00697e72cdd4545aa1baf0a7357e18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pool: {fileID: 11400000, guid: 2bd92802fdf12ea4386268314917885d, type: 2}
+  mydeck: []
+  cash: 0
+--- !u!4 &1375175044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375175042}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 447.21555, y: 259.9458, z: -0.2822567}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1581395375
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,3 +1477,5 @@ SceneRoots:
   - {fileID: 641143283}
   - {fileID: 1786893804}
   - {fileID: 1662751951}
+  - {fileID: 1375175044}
+  - {fileID: 957489872}

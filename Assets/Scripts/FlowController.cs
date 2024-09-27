@@ -5,9 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class FlowController : MonoBehaviour
 {
+
+
     public void SceneMover(string SceneName)
     {
         SceneManager.LoadScene(SceneName);
-
+       
     }
+
+
+    
 }

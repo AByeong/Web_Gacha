@@ -5,6 +5,8 @@ using UnityEngine;
 using TMPro;
 public class GachaManager : MonoBehaviour
 {
+
+
     public GachaPool gachainfo;//가챠 정보 가져오기
     [SerializeField]private int gacharesult; //가챠 결과
 
@@ -47,8 +49,9 @@ public class GachaManager : MonoBehaviour
             }
 
             showcards[i].GetComponent<CardsClass>().card = gacharesulcards[i];//화면에 나온 카드 표시
+            
         }
-
+         GoogleSheetManager.Instance.SetValue(BitArrayToString(MyChardsManager.Instance.mypool));
     }
 
    private CardInfo Gatcha()
@@ -81,7 +84,7 @@ public class GachaManager : MonoBehaviour
     }
 
 
-    string BitArrayToString(BitArray bitArray)//비트어레이를 텍스트로 표기할 수 있도록해주는 함수
+    public string BitArrayToString(BitArray bitArray)//비트어레이를 텍스트로 표기할 수 있도록해주는 함수
     {
         System.Text.StringBuilder sb = new System.Text.StringBuilder();
 

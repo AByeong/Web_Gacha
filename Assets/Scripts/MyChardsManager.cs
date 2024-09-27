@@ -22,6 +22,7 @@ public class MyChardsManager : MonoBehaviour
     public BitArray mypool;
     public int cash = 0;
 
+ 
 
     private void Awake()
     {
@@ -44,10 +45,11 @@ public class MyChardsManager : MonoBehaviour
         mypool = new BitArray(max_count);
     }
 
-     
+   
 
-    
-    
+
+
+
 
 
 }
